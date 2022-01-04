@@ -11,6 +11,8 @@ def camX():
         webcam = cv2.VideoCapture(0)
         check, frame = webcam.read()
         cv2.imwrite('C:/Users/SIRI/Desktop/cap/img_'+(str(i))+'.jpg',frame)
+        if i==5:
+            break
         webcam.release()
 
 
